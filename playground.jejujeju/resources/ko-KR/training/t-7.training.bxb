@@ -1,0 +1,5 @@
+train (t-72bi9hsv29e56gn0g2s2pk7x5) {
+  utterance ("[g:GetRestaurantInfo] (한경)[v:Near:Hankyung] (카페)[v:Kind:Cafe] 알려줘")
+  plan (Y2BlkCvISaxML8ovzUvRy0rNKgVhvaDU4pLE0qLEvBIGVWzy7qklCCWeeWn5DBLYlHln5qVgl/FLTSxi4C3LLNMrTs1J0wsGEgwsDIwMTAzMQJoByIJAGGCGyjEAAA==)
+  last-modified (1565683360640)
+}

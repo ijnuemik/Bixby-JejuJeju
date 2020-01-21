@@ -1,0 +1,11 @@
+structure (ProverbData) {
+  description (속담 데이터)
+  property (proverb) {
+    type (Proverb)
+    min (Optional) max (One)
+  }
+  property (mean){
+    type (Mean)
+    min (Required) max (One)
+  }
+}

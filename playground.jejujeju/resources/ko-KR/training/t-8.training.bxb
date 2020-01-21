@@ -1,0 +1,5 @@
+train (t-8a234vgf2mwffue8ae9l61sxy) {
+  utterance ("[g:GetRestaurantInfo] (한림)[v:Near:Hallim] (식당)[v:Kind:Restaurant] 알려줘")
+  plan (Y2BlkCvISaxML8ovzUvRy0rNKgVhvaDU4pLE0qLEvBIGVWzy7qklCCWeeWn5DBLYlHln5qVgl/FLTSxi4C3LLNMrTs1J0wsGEgwsDIwMTAzMQJoByIJAGGCGyjEAAA==)
+  last-modified (1565680778494)
+}

@@ -1,0 +1,9 @@
+enum (Near) {
+  description (근처, 주변)
+  symbol (Nearby)
+  symbol (Aewol)
+  symbol (Hallim)
+  symbol (Hankyung)
+  symbol (Daejung)
+  symbol (Anduk)
+}

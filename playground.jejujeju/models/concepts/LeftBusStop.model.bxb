@@ -1,0 +1,3 @@
+integer (LeftBusStop) {
+  description (__DESCRIPTION__)
+}

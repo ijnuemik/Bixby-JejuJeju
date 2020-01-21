@@ -1,0 +1,53 @@
+action (GetBusInfo) {
+  description (버스 정보를 가져온다. 남은 정류장의 수, 남은 시간을 나타낸다.) 
+  type(Search)
+  
+  collect {
+    input (self) {
+      type (self.Self)
+      min (Required) max (One)
+      default-init{
+        intent{
+          goal: self.GetImaginarySelf // 사용자 더미 데이터를 가져오는 함수, 테스트시 사용
+          //goal: self.GetSelf // 실제 마켓플레이스 배포시에 사용
+        }
+      }
+    }
+    
+//    input (near) {
+//      type (Near)
+//      min (Optional) max (One)
+//    }
+    
+    computed-input (point){ //computed-input 빅스비 내부에서 계산하고 사용하겠다는 것
+      type (Point)
+      min (Optional) max (One)
+      compute{
+//        if(exists(near)){
+          // 사용자의 위치를 가져오기 위해서는 동의가 필요
+          // capsule.bxb의 'user-profile-access' 등록
+          // 참조 (https://bixbydevelopers.com/dev/docs/reference/type/capsule.permissions)
+          intent{
+            goal: Point
+            route: geo.CurrentLocation
+          }         
+//        }
+      }
+    }
+    
+    input (busnumber){
+      type(BusNumber)
+      min (Optional) max (One)
+    }
+  }
+  
+  output (Bus){
+    on-empty{
+      halt{
+        dialog{
+          template ("[#{value(self.nameInfo.structuredName)} 님,]주변에 검색되는 정류장이 없습니다.")
+        }
+      }
+    }
+  }
+}

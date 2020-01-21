@@ -1,0 +1,19 @@
+layout-macro-def (AttractionList) {
+  params {
+    param (attraction) {
+      type (Attraction)
+      min (Required) max (One)
+    }
+  }
+  content {
+    cell-card {
+      slot2 {
+          content {
+              order (PrimarySecondary)
+              primary ("#{value(attraction.name)}")
+              secondary ("[#{value(attraction.location)}]")
+            }
+        }
+     }
+  }
+}

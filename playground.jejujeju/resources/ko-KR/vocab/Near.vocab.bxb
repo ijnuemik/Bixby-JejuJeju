@@ -1,0 +1,9 @@
+// 발화에 대한 빅스비 동작의 정확성을 높이기 위하여 사용 (https://bixbydevelopers.com/dev/docs/dev-guide/developers/training.vocabulary)
+vocab(Near){
+    "Nearby"{"근처" "주변"}
+    "Aewol" { "애월" "애월읍" }
+    "Hallim" {"한림" "한림읍"}
+    "Hankyung" {"한경" "한경면"}
+    "Daejung" {"대정" "대정읍"}
+    "Anduk" {"안덕" "안덕면"}
+}

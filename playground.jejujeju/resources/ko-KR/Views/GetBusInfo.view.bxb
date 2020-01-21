@@ -1,0 +1,37 @@
+// 결과 화면에 대한 보여주는 방식을 설정 (https://bixbydevelopers.com/dev/docs/reference/type/result-view)
+result-view {
+  // 결과 화면을 보여주고 싶은 output concept을 지정
+  match: Bus(this)
+
+  message {
+//    if(size(this) == 1){
+//      template ("[#{value(this.username)} 님,] [#{value(this.busnumber)} 번] 버스 도착 예정 정보입니다.")
+//    }else{     
+        template ("[#{value(this.username)} 님,] 도착 예정 정보입니다.")
+//    }    
+  }
+
+  render {
+//    if(size(this) == 1){
+//      layout{ 
+//       layout-macro (BusInfo){
+//          param(info){
+ //           expression (this)
+ //         }
+ //       }
+ //     }
+      
+//    }else{
+      list-of (this){
+        where-each (item){
+          layout-macro (BusList){
+            param(bus){
+              expression (item)
+            }
+          }
+        }
+      }
+//    }
+    
+  }
+}

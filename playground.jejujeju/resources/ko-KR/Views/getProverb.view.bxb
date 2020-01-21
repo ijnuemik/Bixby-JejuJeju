@@ -1,0 +1,29 @@
+result-view{
+  match: ProverbData(this)
+  
+  message{
+    template ("제주 속담입니다.")
+  } //dialog
+  
+   render {
+     layout {
+       section {
+         content {
+           single-line {
+             text {
+               style (Detail_M)
+               value ("#{value(this.proverb)}")
+             }
+           }
+           single-line {
+             text {
+               style (Detail_M)
+               value ("뜻: #{value(this.mean)}")
+             }
+           }
+         }
+       }
+     }
+   }
+  
+}

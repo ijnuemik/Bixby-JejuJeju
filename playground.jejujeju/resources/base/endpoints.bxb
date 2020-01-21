@@ -1,0 +1,20 @@
+endpoints {
+  action-endpoints {
+    action-endpoint (GetProverb) {
+      accepted-inputs (topic)
+      local-endpoint (GetProverbs.js)
+    }
+    action-endpoint (GetRestaurantInfo) {
+      accepted-inputs (near, point, self, kind)
+      local-endpoint (GetRestaurantInfo.js)
+    }
+    action-endpoint (GetAttractionInfo) {
+      accepted-inputs (near, point, self)
+      local-endpoint (GetAttractionInfo.js)
+    }
+    action-endpoint (GetBusInfo) {
+      accepted-inputs (point, self, busnumber)
+      local-endpoint (GetBusInfo.js)
+    }    
+  }
+}

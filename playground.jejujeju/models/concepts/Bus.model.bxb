@@ -1,0 +1,28 @@
+structure (Bus) {
+  description (레스토랑 정보를 담는 structure입니다)
+  
+  property (username) {
+    type (UserName)
+    min (Optional) max (One)
+  }
+  
+  property (busnumber) {
+    type (BusNumber)
+    min (Required) max (One)
+  }
+  
+  property (buslefttime){
+    type (BusLeftTime)
+    min (Required) max (One)
+  }
+  
+  property (leftbusstop){
+    type (LeftBusStop)
+    min (Required) max (One)
+  }
+  
+//  property (flag) {
+//    type (core.Boolean)
+//    min (Required) max (One)
+//  }
+}

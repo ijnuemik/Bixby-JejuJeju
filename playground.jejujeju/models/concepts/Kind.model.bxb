@@ -1,0 +1,5 @@
+enum (Kind) {
+  description (카페냐 식당이냐)
+  symbol (Cafe)
+  symbol (Restaurant)
+}

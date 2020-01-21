@@ -1,0 +1,3 @@
+integer (BusLeftTime) {
+  description (__DESCRIPTION__)
+}

@@ -1,0 +1,5 @@
+train (t-j5n9gpdivzkeakg5v225ujdml) {
+  utterance ("[g:GetRestaurantInfo] (애월)[v:Near:Aewol] (카페)[v:Kind:Cafe] 알려줘")
+  plan (Y2BlkCvISaxML8ovzUvRy0rNKgVhvaDU4pLE0qLEvBIGVWzy7qklCCWeeWn5DBLYlHln5qVgl/FLTSxi4C3LLNMrTs1J0wsGEgwsDIwMTAzMQJoByIJAGGCGyjEAAA==)
+  last-modified (1565605875396)
+}

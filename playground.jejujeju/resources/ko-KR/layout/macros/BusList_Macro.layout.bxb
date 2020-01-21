@@ -1,0 +1,19 @@
+layout-macro-def (BusList) {
+  params {
+    param (bus) {
+      type (Bus)
+      min (Required) max (One)
+    }
+  }
+  content {
+    cell-card {
+      slot2 {
+          content {
+              order (PrimarySecondary)
+              primary ("[#{value(bus.busnumber)}]번 버스")
+              secondary ("[#{value(bus.buslefttime)}]분 후 도착 예정")
+            }
+        }
+     }
+  }
+}

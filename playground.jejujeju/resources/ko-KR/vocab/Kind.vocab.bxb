@@ -1,0 +1,4 @@
+vocab(Kind){
+  "Cafe" {"카페" "까페"}
+  "Restaurant" {"식당" "맛집"}
+}

@@ -1,0 +1,11 @@
+action (GetProverb) {
+  description (제주 속담입니다.)
+  type(Search)
+  collect {
+    input (topic) {
+      type (Topic)
+      min (Optional) max (One)
+    }
+  }
+  output (ProverbData)
+}

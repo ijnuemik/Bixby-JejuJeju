@@ -1,0 +1,28 @@
+capsule {
+  id (playground.jejujeju)
+  version (0.1.0)
+  format (3)
+  targets {
+    target (bixby-mobile-en-US){enabled (false)}
+    target (bixby-mobile-ko-KR){enabled (true)}
+  }
+  runtime-flags {
+    concepts-inherit-super-type-features
+    modern-prompt-rejection
+    support-halt-effect-in-computed-inputs
+  }
+  
+  capsule-imports{
+    import (viv.entity) { version(3.18.11) as (entity) }
+    import (viv.core){ as (core) version-from (entity)}
+    import (viv.common) { as (common) version-from (entity) }
+    import (viv.geo) { as (geo) version-from (entity) }
+    import (viv.self) { version(3.5.41) as (self) }
+  }
+  
+  permissions{
+    user-profile-access
+  } //사용자 위치를 가져오기 위한 개인정보 동의
+  
+  
+}
